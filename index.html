@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Kalendarz</title>
+        <link rel = "stylesheet" href = "style.css"/>
+    </head>
+    <body>
+        <h1 id = "title">
+            Kalendarz
+        </h1>
+        <div id = "siatka">
+            <div id = "navigation">
+                <button class = "button" id = "left">Poprzedni miesiąc</button>
+                <div id = "monthAndYear"></div>
+                <button class = "button" id = "right">Następny miesiąc</button>
+            </div>
+            <div id = "week">
+                <div class = "dayName">Poniedziałek</div>
+                <div class = "dayName">Wtorek</div>
+                <div class = "dayName">Środa</div>
+                <div class = "dayName">Czwartek</div>
+                <div class = "dayName">Piątek</div>
+                <div class = "weekend">Sobota</div>
+                <div class = "weekend">Niedziela</div>
+            </div>
+        </div>
+        
+
+          <dialog id="time">
+            <form method="dialog">
+              <p><label>Godzina:
+                <select id = "hour"></select>:<select id = "minute"></select>
+                <br />
+                <br />
+                <input id = "input"/>
+              </label></p>
+              <menu>
+                <button class = "anuluj button" value="cancel">Anuluj</button>
+                <button class = "dodaj button" value="default">Dodaj</button>
+              </menu>
+
+              
+            </form>
+          </dialog>
+
+          <dialog id = "gotowe">
+            <form method = "dialog">
+              <div id = "events"></div>
+              <menu>
+                <button class = "usun button" value="delete">Usuń</button>
+                <button class = "ok button" value="default">OK</button>
+              </menu>
+            </form>
+          </dialog>
+        <script src = "script.js"></script>
+    </body>
+</html>

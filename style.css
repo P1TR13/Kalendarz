@@ -1,0 +1,93 @@
+body{
+    background-color: grey;
+    margin: 50 0 0 0;
+}
+
+div{
+    border-radius: 5px;
+}
+
+#title{
+    text-align: center;
+}
+
+#siatka{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+#navigation{
+    background-color: white;
+    grid-column: span 7;
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    text-align: center;
+    line-height: 50px;
+}
+
+#navigation button{
+    height: 40px;
+    width: 100px;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+}
+
+#navigation button:hover{
+    cursor: pointer;
+}
+
+#monthAndYear{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#week{
+    grid-column: span 7;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+    grid-gap: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.weekend{
+    background-color: #d40e00;
+}
+
+.dayName{
+    background-color: #003cd4;
+}
+
+.day{
+    background-color: #0075d4;
+}
+
+.day:hover{
+    cursor: pointer;
+    background-color: #1580d6;
+}
+
+.weekendDay{
+    background-color: #d43333;
+}
+
+.weekendDay:hover{
+    cursor: pointer;
+    background-color: #d64545;
+}
+
+.event{
+    background-color: #bc42f5;
+}
+.event:hover{
+    background-color: #ca59ff;
+    cursor: pointer;
+}
+
+.button{
+    cursor: pointer;
+}
